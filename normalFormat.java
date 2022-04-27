@@ -9,13 +9,10 @@ public class normalFormat extends Time{
         Date date = new Date();
         Calendar calendar = GregorianCalendar.getInstance();
         calendar.setTime(date);
-        int hours = calendar.get(Calendar.HOUR_OF_DAY);
+        int hours = calendar.get(Calendar.HOUR_OF_DAY);//21
         int minute = calendar.get(Calendar.MINUTE);
-        int hour = 0;
-        while(hours > 12){
-            hour++;
-            hours--;
-        }
+        int hour = hours - 12;
+
         System.out.printf("%02d", hour);
         System.out.print(":");
         System.out.printf("%02d", minute);
