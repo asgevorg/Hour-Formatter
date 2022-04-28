@@ -1,6 +1,6 @@
 package com.company;
 
-public class normalFormat extends Time{
+public class NormalFormat extends Time{
     public void print(){
         if(hours > 12){
             hours-=12;

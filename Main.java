@@ -8,7 +8,7 @@ public class Main {
         System.out.println("Input 1 for 12 hour format and input 0 for 24");
         int num = scanner.nextInt();
         num = (1 + (num >> 31) - (-num >> 31)) - 1;
-        Time []time = new Time[]{new Format(), new normalFormat()};
+        Time []time = new Time[]{new Time(), new NormalFormat()};
         time[num].print();
     }
 }
